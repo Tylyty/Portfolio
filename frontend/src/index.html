@@ -2,11 +2,15 @@
 <html lang="de">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
     <title>Lebenslauf</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/anna-l-50a099150/" target="_blank">
+            <img src="assets\linkedIn.png" alt="linkedIn"></a>
+    </div>
     <header>
         <button>Home</button>
         <button>Profil</button>
@@ -14,9 +18,10 @@
         <button>Portfolio</button>
         <button>Kontakt</button>
 
-        <section>Anna Julia Lang</section>
-        <section>Verantwortliche Business Services IT</section>
-        <section>14.07.1995</section>
+        <h1>Anna Julia Lang</h1>
+        <h2>Verantwortliche Business Services IT</h2>
+        <h3>14.07.1995</h3>
+
     </header>
 
     <aside>
@@ -34,7 +39,7 @@
             <ul>
                 <li>2020-Heute: Bachelor of Science in Wirtschaftsinformatik, Berner Fachhochschule, Bern</li>
                 <li>2016-2017: Berufsmatur, feusi Bildungszentrum, Bern</li>
-                <li>2012-2015: Kaufmännische Ausbildung (HGT), Victoria-Jungfrau Grand Hotel & Spa, Interlaken</li>
+                <li>2012-2015: Kauffrau EFZ (HGT), Victoria-Jungfrau Grand Hotel & Spa, Interlaken</li>
                 <li>2011-2012: 10. Schuljahr, Didac Schulen, Eastbourne (GB)</li>
             </ul>
         </section>
@@ -69,9 +74,11 @@
                 laborum.
             </div>
         </section>
-        <section>
+        <section id="collapsible">
             <h2>Berufserfahrung</h2>
-            <div><b>Verantwortliche Business Services IT</b></div>
+        </section>
+        <section id="collapsible-content">
+            <div class="bold">Verantwortliche Business Services IT</div>
             <div>Stämpfli AG, Bern</div>
             <div>2020-Heute</div>
             <ul>
@@ -79,16 +86,23 @@
                 <li>Aufgabe 2</li>
                 <li>Aufgabe 3</li>
             </ul>
-            <div><b>Projektleitung</b></div>
+            <div class="bold">Projektleitung</div>
             <div>Stämpfli AG, Bern</div>
             <div>2017-2020</div>
             <ul>
                 <li>Aufgabe 1</li>
                 <li>Aufgabe 2</li>
             </ul>
-            <div><b>Rezeptionistin</b></div>
+            <div class="bold">Rezeptionistin</div>
             <div>Bellevue Palace, Bern</div>
             <div>2015-2016</div>
+            <ul>
+                <li>Aufgabe 1</li>
+                <li>Aufgabe 2</li>
+            </ul>
+            <div class="bold">Kauffrau EFZ (HGT)</div>
+            <div>Victoria-Jungfrau Grand Hotel & Spa, Interlaken</div>
+            <div>2012-2015</div>
             <ul>
                 <li>Aufgabe 1</li>
                 <li>Aufgabe 2</li>
@@ -116,6 +130,20 @@
         <button>Kontakt</button>
         <button>Home</button>
     </footer>
+
+    <script>
+        let collapsible = document.getElementById('collapsible');
+        collapsible.addEventListener('click', function () {
+            this.classList.toggle('active');
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        })
+    </script>
+
 </body>
 
 

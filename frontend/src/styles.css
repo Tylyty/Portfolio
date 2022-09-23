@@ -1,0 +1,105 @@
+header {
+  background-color: rgb(43, 41, 41);
+  color: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+aside {
+  background-color: antiquewhite;
+  padding: 0 2em;
+}
+
+body,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+h1::after {
+  position: absolute;
+  bottom: -0.5em;
+  left: 15%;
+  content: "";
+  height: 2px;
+  width: 70%;
+  background-color: antiquewhite;
+}
+
+section h2 {
+  border-bottom: 2px solid grey;
+  margin: 1em 0 0.5em 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    ". aside header ."
+    ". aside content .";
+  grid-template-columns: 1fr 1fr 1.5fr 1fr;
+  grid-template-rows: 20em 1fr;
+  gap: 1em;
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#collapsible:hover {
+  background: antiquewhite;
+  cursor: pointer;
+}
+
+#collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.icons img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.icons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 4px;
+}
