@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+        <div id="topnav">
+            <a class="active" href="#home">Home</a>
+            <div id="burgerLinks">
+                <a href="#profil">Profil</a>
+                <a href="#cv">Lebenslauf</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="content">
+            <header>
+                <section id="home">
+                    <div class="hero-image">
+                        <div class="hero-text">Busy as a Bee</div>
+                        <div class="caption">Referenz: https://pixabay.com/</div>
+                    </div>
+                </section>
+                <section id="profil">
+                    <div>Profil</div>
+                    <div>Anna Julia Lang</div>
+                    <div>Verantwortliche Business Services IT</div>
+                    <div>14.07.1995</div>
+                    <div>The standard Lorem Ipsum passage, used since the 1500s
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum."
+
+                        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                        totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt
+                        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                        qui
+                        dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                        tempora
+                        incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                        nostrum
+                        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                        Quis
+                        autem
+                        vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
+                        illum
+                        qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
+                    </div>
+                </section>
+            </header>
+
+
+            <main>
+                <section id="cv">Lebenslauf</section>
+                <section id="portfolio">Portfolio</section>
+                <section id="kontakt">Kontakt</section>
+            </main>
+
+            <footer>
+                <button>Kontakt</button>
+                <button>Home</button>
+            </footer>
+        </div>
+        <!-- End smartphone / tablet look -->
+    </div>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        // Get the topnav
+        var topnav = document.getElementById("topnav");
+
+        // Get the offset position of the topnav
+        var sticky = topnav.offsetTop;
+
+        // Add the sticky class to the topnav
+        // when you reach its scroll position.
+        // Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                topnav.classList.add("sticky")
+            } else {
+                topnav.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("burgerLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+
+</html>
