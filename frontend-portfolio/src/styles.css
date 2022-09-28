@@ -41,7 +41,7 @@ the navigation menu (except for logo/home) */
 
 /* Style the hamburger menu */
 #topnav div.icon {
-  background: black;
+  background: rgb(44, 43, 43);
   display: block;
   position: absolute;
   right: 0;
