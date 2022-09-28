@@ -15,7 +15,7 @@
             <a href="#portfolio">Portfolio</a>
             <a href="#kontakt">Kontakt</a>
         </div>
-        <div class="icon" onclick="myFunction()">
+        <div class="icon" onclick="mobileMenu()">
         </div>
     </div>
     <div class="content">
@@ -98,8 +98,9 @@
                 topnav.classList.remove("sticky");
             }
         }
-
-        function myFunction() {
+    </script>
+    <script>
+        function mobileMenu() {
             var x = document.getElementById("burgerLinks");
             if (x.style.display === "block") {
                 x.style.display = "none";

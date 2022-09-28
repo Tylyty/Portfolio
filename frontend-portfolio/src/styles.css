@@ -16,52 +16,6 @@ h3 {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Style navigation */
-#topnav {
-  overflow: hidden;
-  background-color: rgb(44, 43, 43);
-  z-index: 999;
-  position: relative;
-}
-
-/*style navigation links*/
-#topnav a {
-  color: #f2f2f2;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Hide the links inside
-the navigation menu (except for logo/home) */
-#topnav #burgerLinks {
-  display: none;
-}
-
-/* Style the hamburger menu */
-#topnav div.icon {
-  background: rgb(44, 43, 43);
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 50px;
-}
-
-/* Change the color of links on hover */
-#topnav a:hover {
-  background-color: #b2e1ed;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-#topnav a.active {
-  background-color: #fed728;
-  color: black;
-}
-
 @media (min-width: 768px) {
   #topnav {
     background-color: rgb(44, 43, 43);
@@ -73,9 +27,10 @@ the navigation menu (except for logo/home) */
     float: left;
     display: inline;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
     font-size: 17px;
+    color: white;
   }
 
   #topnav a:hover {
@@ -97,6 +52,46 @@ with JS when it reaches its scroll position */
   }
 }
 
+#topnav {
+  overflow: hidden;
+  background-color: rgb(44, 43, 43);
+  z-index: 999;
+  position: relative;
+}
+
+#topnav a {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Hide links inside nav-menu (except for logo/home) */
+#topnav #burgerLinks {
+  display: none;
+}
+
+#topnav div.icon {
+  background: rgb(44, 43, 43);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+}
+
+#topnav a:hover {
+  background-color: #b2e1ed;
+  color: black;
+}
+
+#topnav a.active {
+  background-color: #fed728;
+  color: black;
+}
+
 .hero-image {
   background-image: url("assets/bee-cover.png");
   background-color: white;
@@ -107,7 +102,7 @@ with JS when it reaches its scroll position */
   padding-top: 20em;
 }
 
-.hero-image .caption {
+.caption {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -123,7 +118,7 @@ with JS when it reaches its scroll position */
   top: 25%;
   left: 20%;
   color: black;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: bold;
 }
 
