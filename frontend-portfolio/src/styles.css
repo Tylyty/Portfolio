@@ -32,11 +32,12 @@ h4 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 9;
 }
 
 #topnav a {
   color: #f2f2f2;
+  z-index: 9;
   padding: 14px;
   text-decoration: none;
   font-size: 17px;
@@ -44,22 +45,24 @@ h4 {
 }
 
 /* Hide links inside nav-menu (except for logo/home) */
-#topnav #burgerLinks {
-  display: none;
-  position: absolute;
+#burgerLinks {
   top: 100%;
   background: rgb(44, 43, 43);
-  z-index: 999;
+  z-index: 9;
+  overflow-y: hidden;
+  max-height: 0;
 }
 
 #topnav div.icon {
   background: rgb(44, 43, 43);
-  display: block;
   position: absolute;
   right: 0;
   top: 0;
-  height: 100%;
+  height: 48px;
   width: 50px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
 }
 
 #topnav a:hover {
@@ -74,7 +77,6 @@ h4 {
 
 .hero-image {
   background-image: url("assets/bee-cover.png");
-  background-color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
