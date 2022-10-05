@@ -69,6 +69,11 @@
   background-color: #b2e1ed;
   position: relative;
   border-radius: 10px;
+  max-width: fit-content;
+}
+
+.cv-text {
+  max-width: 25ch;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
