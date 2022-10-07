@@ -1,0 +1,85 @@
+.profile-content {
+  margin: 10px;
+}
+
+img.icon {
+  height: 24px;
+  width: 24px;
+}
+
+i.fa.fa {
+  font-size: 24px;
+}
+
+.skill-details {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.bar {
+  position: relative;
+  background-color: #ccc;
+  border-radius: 20px;
+  width: 95%;
+}
+
+.bar div {
+  position: relative;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #b2e1ed;
+}
+
+.skills:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+#crm-bar {
+  animation: crm-fill 2s forwards;
+}
+
+@keyframes crm-fill {
+  100% {
+    width: 85%;
+  }
+}
+
+#gpo-bar {
+  animation: gpo-fill 2s forwards;
+}
+
+@keyframes gpo-fill {
+  100% {
+    width: 70%;
+  }
+}
+
+#re-bar {
+  animation: re-fill 2s forwards;
+}
+
+@keyframes re-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+#html-bar {
+  animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+  100% {
+    width: 60%;
+  }
+}
+
+#css-bar {
+  animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+  100% {
+    width: 60%;
+  }
+}
