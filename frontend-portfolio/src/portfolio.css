@@ -1,6 +1,9 @@
 .mySlides {
   display: none;
-  width: 100%;
+}
+
+.slidePic {
+  width: 100vw;
 }
 
 .slideshow-container {
