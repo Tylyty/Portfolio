@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 html {
   margin: 0;
@@ -95,14 +99,14 @@ h4 {
 }
 
 .hero-text {
-  text-align: left;
   position: relative;
-  top: 50%;
-  left: 10%;
+  left: 1%;
   color: black;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
   width: fit-content;
+  padding-left: 20px;
+  top: 40px;
 }
 
 #home {
@@ -152,4 +156,16 @@ h4 {
     background-color: #fed728;
     color: black;
   }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
