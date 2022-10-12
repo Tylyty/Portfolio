@@ -145,16 +145,17 @@ h4 {
 
   #topnav #burgerLinks {
     display: inline-block;
+    max-height: none;
   }
 
   #topnav a:hover {
     background-color: #b2e1ed;
-    color: black;
+    color: rgb(44, 43, 43);
   }
 
   #topnav a.active {
     background-color: #fed728;
-    color: black;
+    color: rgb(44, 43, 43);
   }
 }
 
