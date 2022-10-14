@@ -18,12 +18,16 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: "Roboto", sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 10px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
 }
 
 * {
