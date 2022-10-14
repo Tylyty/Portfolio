@@ -114,10 +114,14 @@ i.fa.fa {
 
   .grid-container-profile {
     display: grid;
-    gap: 2em 1em;
+    gap: 1em 1em;
     grid-template-areas:
       "profile-content profile-content profile-content profile-content profile-pic"
       "skills skills skills skills lang-hobbies";
+    margin-right: 8em;
+    margin-left: 8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 
   .profile-pic {
