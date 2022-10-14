@@ -99,23 +99,28 @@ i.fa.fa {
 }
 
 @media (min-width: 768px) {
-  .flex-container-profile-intro {
-    display: flex;
-  }
   .profile-content {
-    order: 1;
+    grid-area: profile-content;
   }
   .profile-pic {
-    order: 2;
-    max-height: 500px;
-  }
-  .flex-container-skills-lang-hobbies {
-    display: flex;
-  }
-  .flex-container-lang-hobbies {
-    position: absolute;
-    right: 180px;
+    grid-area: profile-pic;
   }
   .skills {
+    grid-area: skills;
+  }
+  .grid-item-lang-hobbies {
+    grid-area: lang-hobbies;
+  }
+
+  .grid-container-profile {
+    display: grid;
+    gap: 2em 1em;
+    grid-template-areas:
+      "profile-content profile-content profile-content profile-content profile-pic"
+      "skills skills skills skills lang-hobbies";
+  }
+
+  .profile-pic {
+    max-width: 350px;
   }
 }
