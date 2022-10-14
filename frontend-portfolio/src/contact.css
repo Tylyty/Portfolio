@@ -36,3 +36,6 @@ input[type="submit"]:hover {
 #kontakt {
   margin: 10px;
 }
+
+@media (min-width: 768px) {
+}

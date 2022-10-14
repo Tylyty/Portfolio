@@ -12,6 +12,8 @@ html {
 
 body {
   margin-top: 51px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1,
@@ -102,7 +104,7 @@ h4 {
   position: relative;
   left: 1%;
   color: black;
-  font-size: 36px;
+  font-size: 8vw;
   font-weight: bold;
   width: fit-content;
   padding-left: 20px;
@@ -115,6 +117,18 @@ h4 {
 
 #home img {
   width: 100vw;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -157,16 +171,4 @@ h4 {
     background-color: #fed728;
     color: rgb(44, 43, 43);
   }
-}
-
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
 }

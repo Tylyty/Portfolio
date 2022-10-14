@@ -6,6 +6,14 @@
   margin: 10px;
 }
 
+.hobbies ul {
+  list-style: none;
+}
+
+.language ul {
+  list-style: none;
+}
+
 img.icon {
   height: 24px;
   width: 24px;
@@ -87,5 +95,27 @@ i.fa.fa {
 @keyframes css-fill {
   100% {
     width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-container-profile-intro {
+    display: flex;
+  }
+  .profile-content {
+    order: 1;
+  }
+  .profile-pic {
+    order: 2;
+    max-height: 500px;
+  }
+  .flex-container-skills-lang-hobbies {
+    display: flex;
+  }
+  .flex-container-lang-hobbies {
+    position: absolute;
+    right: 180px;
+  }
+  .skills {
   }
 }
