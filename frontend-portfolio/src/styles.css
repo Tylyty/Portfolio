@@ -32,7 +32,7 @@ h4 {
 
 * {
   font-family: "Open Sans", sans-serif;
-  /*box-sizing*/
+  color: rgb(44, 43, 43);
 }
 
 #topnav {
@@ -77,12 +77,12 @@ h4 {
 
 #topnav a:hover {
   background-color: #b2e1ed;
-  color: black;
+  color: rgb(44, 43, 43);
 }
 
 #topnav a.active {
   background-color: #fed728;
-  color: black;
+  color: rgb(44, 43, 43);
 }
 
 .hero-image {
@@ -98,7 +98,7 @@ h4 {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  color: black;
+  color: rgb(44, 43, 43);
   background: none;
   text-align: center;
   opacity: 0.4;
@@ -107,7 +107,7 @@ h4 {
 .hero-text {
   position: relative;
   left: 1%;
-  color: black;
+  color: rgb(44, 43, 43);
   font-size: 8vw;
   font-weight: bold;
   width: fit-content;
@@ -136,6 +136,9 @@ h4 {
 }
 
 @media (min-width: 768px) {
+  body {
+    margin-top: 0;
+  }
   #topnav {
     background-color: rgb(44, 43, 43);
     overflow: hidden;
