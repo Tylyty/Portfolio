@@ -1,7 +1,7 @@
 input[type="text"],
 select {
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 15px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -24,10 +24,18 @@ input[type="submit"]:hover {
   background-color: #b2e1ed;
 }
 
+::placeholder {
+  position: absolute;
+  top: 12px;
+}
+
 #message {
   height: 200px;
 }
 
 #kontakt {
   margin: 10px;
+}
+
+@media (min-width: 768px) {
 }

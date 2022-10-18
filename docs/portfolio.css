@@ -1,6 +1,9 @@
 .mySlides {
   display: none;
-  width: 100%;
+}
+
+.slidePic {
+  width: 100vw;
 }
 
 .slideshow-container {
@@ -36,9 +39,12 @@
 .slideText {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 5px;
   background-color: rgb(44, 43, 43);
   color: white;
   padding: 15px;
   opacity: 0.8;
+}
+
+@media (min-width: 768px) {
 }

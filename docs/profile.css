@@ -1,5 +1,17 @@
+.profile-pic {
+  width: 100vw;
+}
+
 .profile-content {
   margin: 10px;
+}
+
+.hobbies ul {
+  list-style: none;
+}
+
+.language ul {
+  list-style: none;
 }
 
 img.icon {
@@ -14,6 +26,7 @@ i.fa.fa {
 .skill-details {
   margin-bottom: 10px;
   margin-top: 10px;
+  margin-left: 10px;
 }
 
 .bar {
@@ -21,6 +34,7 @@ i.fa.fa {
   background-color: #ccc;
   border-radius: 20px;
   width: 95%;
+  margin-left: 10px;
 }
 
 .bar div {
@@ -81,5 +95,36 @@ i.fa.fa {
 @keyframes css-fill {
   100% {
     width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-content {
+    grid-area: profile-content;
+  }
+  .profile-pic {
+    grid-area: profile-pic;
+  }
+  .skills {
+    grid-area: skills;
+  }
+  .grid-item-lang-hobbies {
+    grid-area: lang-hobbies;
+  }
+
+  .grid-container-profile {
+    display: grid;
+    gap: 1em 1em;
+    grid-template-areas:
+      "profile-content profile-content profile-content profile-content profile-pic"
+      "skills skills skills skills lang-hobbies";
+    margin-right: 6em;
+    margin-left: 6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .profile-pic {
+    max-width: 350px;
   }
 }

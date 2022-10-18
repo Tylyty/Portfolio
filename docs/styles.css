@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 html {
   margin: 0;
@@ -8,21 +12,27 @@ html {
 
 body {
   margin-top: 51px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: "Roboto", sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 10px;
 }
 
+h4 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
-  /*box-sizing*/
+  color: rgb(44, 43, 43);
 }
 
 #topnav {
@@ -58,8 +68,8 @@ h4 {
   position: absolute;
   right: 0;
   top: 0;
-  height: 48px;
-  width: 50px;
+  height: 52px;
+  width: 52px;
   display: flex;
   place-items: center;
   justify-content: center;
@@ -67,12 +77,12 @@ h4 {
 
 #topnav a:hover {
   background-color: #b2e1ed;
-  color: black;
+  color: rgb(44, 43, 43);
 }
 
 #topnav a.active {
   background-color: #fed728;
-  color: black;
+  color: rgb(44, 43, 43);
 }
 
 .hero-image {
@@ -88,21 +98,21 @@ h4 {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  color: black;
+  color: rgb(44, 43, 43);
   background: none;
   text-align: center;
   opacity: 0.4;
 }
 
 .hero-text {
-  text-align: left;
   position: relative;
-  top: 50%;
-  left: 10%;
-  color: black;
-  font-size: 40px;
+  left: 1%;
+  color: rgb(44, 43, 43);
+  font-size: 8vw;
   font-weight: bold;
   width: fit-content;
+  padding-left: 20px;
+  top: 40px;
 }
 
 #home {
@@ -113,7 +123,22 @@ h4 {
   width: 100vw;
 }
 
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media (min-width: 768px) {
+  body {
+    margin-top: 0;
+  }
   #topnav {
     background-color: rgb(44, 43, 43);
     overflow: hidden;
@@ -141,15 +166,16 @@ h4 {
 
   #topnav #burgerLinks {
     display: inline-block;
+    max-height: none;
   }
 
   #topnav a:hover {
     background-color: #b2e1ed;
-    color: black;
+    color: rgb(44, 43, 43);
   }
 
   #topnav a.active {
     background-color: #fed728;
-    color: black;
+    color: rgb(44, 43, 43);
   }
 }
