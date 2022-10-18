@@ -38,4 +38,41 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 768px) {
+  .fname {
+    grid-area: fname;
+  }
+
+  .lname {
+    grid-area: lname;
+  }
+
+  .email {
+    grid-area: email;
+  }
+
+  .topic {
+    grid-area: topic;
+  }
+
+  .message {
+    grid-area: message;
+  }
+
+  .submit {
+    grid-area: submit;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-areas:
+      ". fname lname ."
+      ". email email ."
+      ". topic topic ."
+      ". message message ."
+      ". submit . .";
+    grid-template-rows: 5em 4em 4em 50vh 4em;
+    grid-template-columns: 1fr 400px 400px 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+  }
 }

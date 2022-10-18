@@ -2,7 +2,6 @@
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -29,11 +28,11 @@
 .cv-container::after {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   right: -1px;
   background-color: #b2e1ed;
-  border: 3.5px solid #4d4c4e;
+  border: 3.5px solid white;
   top: 20px;
   border-radius: 50%;
   z-index: 1;
@@ -42,25 +41,6 @@
 /* Place the container to the right */
 .right {
   left: 10%;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid #b2e1ed;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #b2e1ed transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -12px;
 }
 
 /* The actual content */
@@ -99,7 +79,7 @@
 /* Make sure all circles are at the same spot */
 .left::after,
 .right::after {
-  left: 20px;
+  left: 22px;
 }
 
 /* Make all right containers behave like the left ones */
@@ -109,4 +89,72 @@
 
 /* Media queries - Responsive timeline on screens larger than 768px wide */
 @media (min-width: 768px) {
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin-bottom: 4em;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #b2e1ed;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  /* Container around content */
+  .cv-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  /* The circles on the timeline */
+  .cv-container::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #b2e1ed;
+    border: 4px solid white;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* Place the container to the left */
+  .left {
+    left: 19%;
+  }
+
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -9px;
+  }
+
+  /* Fix the circle for containers on the left side */
+  .left::after {
+    left: 332px;
+  }
+
+  /* The actual content */
+  .cv-container-content {
+    padding: 20px 15px;
+    background-color: #b2e1ed;
+    position: relative;
+    border-radius: 10px;
+    max-width: 230px;
+  }
 }
