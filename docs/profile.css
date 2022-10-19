@@ -118,10 +118,7 @@ i.fa.fa {
     grid-template-areas:
       "profile-content profile-content profile-content profile-content profile-pic"
       "skills skills skills skills lang-hobbies";
-    margin-right: 6em;
-    margin-left: 6em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 2em 10% 2em 10%;
   }
 
   .profile-pic {
