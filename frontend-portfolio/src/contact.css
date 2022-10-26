@@ -24,11 +24,6 @@ input[type="submit"]:hover {
   background-color: #b2e1ed;
 }
 
-::placeholder {
-  position: absolute;
-  top: 12px;
-}
-
 #message {
   height: 200px;
 }
@@ -38,6 +33,11 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 768px) {
+  ::placeholder {
+    position: absolute;
+    top: 12px;
+  }
+
   #fname {
     grid-area: fname;
   }
