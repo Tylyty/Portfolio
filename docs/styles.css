@@ -114,11 +114,11 @@ h4 {
   position: relative;
   left: 1%;
   color: rgb(44, 43, 43);
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: bold;
   width: fit-content;
-  padding-left: 20px;
-  top: 40px;
+  padding-left: 10%;
+  top: 10vw;
 }
 
 #home {
@@ -183,5 +183,9 @@ h4 {
   #topnav a.active {
     background-color: #fed728;
     color: rgb(44, 43, 43);
+  }
+
+  .hero-image {
+    background-size: 70%;
   }
 }

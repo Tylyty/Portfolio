@@ -38,6 +38,11 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 768px) {
+  ::placeholder {
+    position: absolute;
+    top: 12px;
+  }
+
   #fname {
     grid-area: fname;
   }
@@ -66,11 +71,11 @@ input[type="submit"]:hover {
     display: grid;
     gap: 0.8em;
     grid-template-areas:
-      "fname lname email email"
-      "topic topic topic topic"
-      "message message message message"
-      "submit . . .";
-    margin: 0em 20% 0em 20%;
+      ". fname lname email email ."
+      ". topic topic topic topic ."
+      ". message message message message ."
+      ". submit . . . .";
+    grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
   }
 
   input[type="text"],
