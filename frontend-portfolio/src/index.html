@@ -259,10 +259,11 @@
                     </div>
                 </div>
             </section>
+            <ul id="hpbooks"></ul>
         </main>
 
         <footer>
-            <ul id="hpbooks"></ul>
+
 
         </footer>
 
@@ -349,7 +350,7 @@
         fetch(url)
             .then((resp) => resp.json())
             .then(function (data) {
-                let hpbooks = data.results;
+                let hpbooks = data;
                 return hpbooks.map(function (book) {
                     let li = createNode('li');
                     let img = createNode('img');
