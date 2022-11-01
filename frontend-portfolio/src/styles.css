@@ -17,11 +17,6 @@ body {
 }
 
 h1,
-h2 {
-  text-align: center;
-}
-
-h1,
 h2,
 h3 {
   font-family: "Roboto", sans-serif;
@@ -152,6 +147,12 @@ h4 {
   body {
     margin-top: 0;
   }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
   #topnav {
     background-color: rgb(44, 43, 43);
     overflow: hidden;

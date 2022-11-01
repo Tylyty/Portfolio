@@ -98,6 +98,25 @@ i.fa.fa {
   }
 }
 
+ul#hpbooks {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul#hpbooks li img {
+  max-height: 200px;
+}
+
+ul#hpbooks li {
+  margin-bottom: 20px;
+}
+
+ul#hpbooks li span {
+  display: block;
+  max-width: 16ch;
+}
+
 @media (min-width: 768px) {
   .profile-content {
     grid-area: profile-content;
@@ -125,5 +144,18 @@ i.fa.fa {
 
   .profile-pic {
     max-width: 350px;
+  }
+
+  ul#hpbooks {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-right: 16px;
+  }
+
+  ul#hpbooks li span {
+    display: block;
+    max-width: 16ch;
   }
 }
