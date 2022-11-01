@@ -25,7 +25,7 @@ h1,
 h2,
 h3 {
   font-family: "Roboto", sans-serif;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px;
   padding-left: 10px;
 }
@@ -92,22 +92,19 @@ h4 {
 }
 
 .hero-image {
-  background-image: url("assets/bee-cover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 20em;
 }
 
 .caption {
-  position: absolute;
+  position: relative;
   bottom: 0px;
-  left: 0px;
+  left: 0;
   color: rgb(44, 43, 43);
   background: none;
-  text-align: center;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .hero-text {
@@ -119,10 +116,6 @@ h4 {
   width: fit-content;
   padding-left: 10%;
   top: 10vw;
-}
-
-#home {
-  position: relative;
 }
 
 #home img {
@@ -139,6 +132,20 @@ h4 {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("assets/cycle.png");
+
+  /* Full height */
+  min-height: 250px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
