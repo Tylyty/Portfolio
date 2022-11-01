@@ -114,6 +114,7 @@ i.fa.fa {
 
   .grid-container-profile {
     margin-top: 25px;
+    margin-bottom: 25px;
     display: grid;
     gap: 0.8em;
     grid-template-areas:
