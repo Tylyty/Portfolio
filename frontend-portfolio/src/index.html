@@ -160,7 +160,7 @@
 
 
         <main>
-            <!-- img src= https://pixabay.com/de/vectors/kreislauf-h%c3%bcgel-minimal-hintergrund-2145189/ -->
+            <!-- parallax img src= https://pixabay.com/de/vectors/kreislauf-h%c3%bcgel-minimal-hintergrund-2145189/ -->
             <div class="parallax"></div>
             <section id="cv">
                 <div class="container reveal">
@@ -262,7 +262,7 @@
         </main>
 
         <footer>
-            <!-- <div id="hp-book"></div> -->
+            <ul id="hpbooks"></ul>
 
         </footer>
 
@@ -331,6 +331,42 @@
         }
 
         window.addEventListener("scroll", reveal);
+
+
+        /* API src= https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data-de */
+        /* content src= https://theboywholivedapi.herokuapp.com/documentation */
+        function createNode(element) {
+            return document.createElement(element);
+        }
+
+        function append(parent, el) {
+            return parent.appendChild(el);
+        }
+
+        const ul = document.getElementById('hpbooks');
+        const url = 'https://legacy--api.herokuapp.com/api/v1/books';
+
+        fetch(url)
+            .then((resp) => resp.json())
+            .then(function (data) {
+                let hpbooks = data.results;
+                return hpbooks.map(function (book) {
+                    let li = createNode('li');
+                    let img = createNode('img');
+                    let span = createNode('span');
+                    img.src = book.image_url;
+                    span.innerHTML = `${book.title}`;
+                    append(li, img);
+                    append(li, span);
+                    append(ul, li);
+                })
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+
+
 
     </script>
 </body>
