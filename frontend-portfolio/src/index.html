@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="cv.css">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -23,7 +22,7 @@
             </div>
         </div>
         <div id="burgerLinks">
-            <a href="#profil">Profil</a>
+            <a href="#profile">Profil</a>
             <a href="#cv">Lebenslauf</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#kontakt">Kontakt</a>
@@ -144,12 +143,13 @@
 
                             <div class="hobbies">
                                 <h3>Hobbies</h3>
+                                <!-- icon src= https://feathericons.com/ -->
                                 <ul>
-                                    <li><i class="fa fa-edit"></i> Zeichnen</li>
-                                    <li><i class="fa fa-book"></i> Lesen</li>
-                                    <li><i class="fa fa-camera"></i> Fotografie</li>
-                                    <li><i class="fa fa-map"></i> Travel</li>
-                                    <li><i class="fa fa-tv"></i> Streaming</li>
+                                    <li><img class="icon" src="assets/icon-edit.svg"> Zeichnen</li>
+                                    <li><img class="icon" src="assets/icon-monitor.svg"> Gaming</li>
+                                    <li><img class="icon" src="assets/icon-book-open.svg"> Lesen</li>
+                                    <li><img class="icon" src="assets/icon-camera.svg"> Fotografie</li>
+                                    <li><img class="icon" src="assets/icon-map.svg"> Fahrradfahren</li>
                                 </ul>
                             </div>
                         </div>
@@ -296,7 +296,7 @@
             myIndex++;
             if (myIndex > x.length) { myIndex = 1 }
             x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 4000); // Change image every 2 seconds
+            setTimeout(carousel, 4000); // Change image every xy seconds
         }
 
         /* slideSchow-buttons src= https://www.w3schools.com/w3css/w3css_slideshow.asp */
@@ -318,7 +318,7 @@
             x[slideIndex - 1].style.display = "block";
         }
 
-        /* src= https://alvarotrigo.com/blog/css-animations-scroll/ */
+        /* lazy-load src= https://alvarotrigo.com/blog/css-animations-scroll/ */
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
 

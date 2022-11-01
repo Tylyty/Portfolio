@@ -19,6 +19,11 @@
   height: 40px;
 }
 
+.slideLeft:hover {
+  background-color: #b2e1ed;
+  cursor: pointer;
+}
+
 .slideRight {
   position: absolute;
   bottom: 35%;
@@ -30,6 +35,11 @@
   border: none;
   border-radius: 10px;
   height: 40px;
+}
+
+.slideRight:hover {
+  background-color: #b2e1ed;
+  cursor: pointer;
 }
 
 .slideText {
