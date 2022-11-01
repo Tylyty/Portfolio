@@ -8,15 +8,19 @@
 
 .hobbies ul {
   list-style: none;
+  padding-inline-start: 10px;
 }
 
 .language ul {
   list-style: none;
+  padding-inline-start: 10px;
 }
 
 img.icon {
   height: 24px;
   width: 24px;
+  position: relative;
+  top: 5px;
 }
 
 i.fa.fa {
@@ -98,6 +102,25 @@ i.fa.fa {
   }
 }
 
+ul#hpbooks {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul#hpbooks li img {
+  max-height: 200px;
+}
+
+ul#hpbooks li {
+  margin-bottom: 20px;
+}
+
+ul#hpbooks li span {
+  display: block;
+  max-width: 16ch;
+}
+
 @media (min-width: 768px) {
   .profile-content {
     grid-area: profile-content;
@@ -113,6 +136,8 @@ i.fa.fa {
   }
 
   .grid-container-profile {
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: grid;
     gap: 0.8em;
     grid-template-areas:
@@ -123,5 +148,18 @@ i.fa.fa {
 
   .profile-pic {
     max-width: 350px;
+  }
+
+  ul#hpbooks {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-right: 16px;
+  }
+
+  ul#hpbooks li span {
+    display: block;
+    max-width: 16ch;
   }
 }
