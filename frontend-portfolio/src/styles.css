@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  margin-top: 51px;
+  margin-top: 15px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -149,7 +149,6 @@ h4 {
 
 @media (min-width: 768px) {
   body {
-    margin-top: 0;
   }
 
   h1,
@@ -198,7 +197,6 @@ h4 {
   }
 
   .hero-image {
-    background-size: 70%;
   }
 
   .parallax {
