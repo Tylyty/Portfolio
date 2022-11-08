@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  margin-top: 51px;
+  margin-top: 15px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -134,13 +134,9 @@ h4 {
 }
 
 .parallax {
-  /* The image used */
   background-image: url("assets/cycle.png");
-
-  /* Full height */
   min-height: 200px;
-
-  /* Create the parallax scrolling effect */
+  /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -149,7 +145,6 @@ h4 {
 
 @media (min-width: 768px) {
   body {
-    margin-top: 0;
   }
 
   h1,
@@ -198,7 +193,6 @@ h4 {
   }
 
   .hero-image {
-    background-size: 70%;
   }
 
   .parallax {

@@ -57,6 +57,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 2em;
+    position: relative;
   }
 
   .slidePic {
@@ -64,8 +65,8 @@
   }
 
   .slideLeft {
-    position: relative;
-    left: -900px;
+    position: absolute;
+    left: calc(50vw - 450px);
     top: 250px;
     background-color: #fed728;
     color: black;
@@ -75,8 +76,8 @@
   }
 
   .slideRight {
-    position: relative;
-    right: 105px;
+    position: absolute;
+    right: calc(50vw - 450px);
     top: 250px;
     background-color: #fed728;
     color: black;

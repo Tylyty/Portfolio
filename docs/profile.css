@@ -106,6 +106,8 @@ ul#hpbooks {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin-left: 10px;
 }
 
 ul#hpbooks li img {
@@ -155,7 +157,8 @@ ul#hpbooks li span {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin-right: 16px;
+    margin-right: calc(50vw - 500px);
+    margin-left: calc(50vw - 500px);
   }
 
   ul#hpbooks li span {
