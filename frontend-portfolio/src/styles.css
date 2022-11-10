@@ -104,6 +104,7 @@ h4 {
   color: rgb(44, 43, 43);
   background: none;
   opacity: 0.2;
+  left: 10px;
 }
 
 .hero-text {
@@ -119,6 +120,7 @@ h4 {
 
 #home img {
   width: 100vw;
+  margin-top: 5px;
 }
 
 .reveal {
@@ -192,7 +194,8 @@ h4 {
     color: rgb(44, 43, 43);
   }
 
-  .hero-image {
+  .caption {
+    left: 20px;
   }
 
   .parallax {
