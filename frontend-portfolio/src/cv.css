@@ -1,27 +1,52 @@
+#cv {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  position: relative;
+  gap: 2em;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
   margin-bottom: 2em;
+  margin-top: 2em;
+  border-left: 4px solid #b2e1ed;
+  position: relative;
+}
+
+.timeline:before {
+  position: absolute;
+  top: -1.3em;
+  left: -1.5em;
+  color: #b2e1ed;
+  content: "Heute";
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: "";
+  /* background-color: #b2e1ed; */
   position: absolute;
-  width: 6px;
-  background-color: #b2e1ed;
-  top: 0;
-  bottom: 0;
-  left: 10%;
-  margin-left: -3px;
+  bottom: -1.3em;
+  left: -1.4em;
+  content: "2012";
+  color: #b2e1ed;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Container around content */
 .cv-container {
-  padding: 10px 40px;
-  position: relative;
   background-color: inherit;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 1.2em;
 }
 
 /* The circles on the timeline */
@@ -30,17 +55,12 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  right: -1px;
+  left: -1.9em;
   background-color: #b2e1ed;
-  border: 3.5px solid white;
-  top: 20px;
+  border: 4px solid white;
+  top: 20%;
   border-radius: 50%;
   z-index: 1;
-}
-
-/* Place the container to the right */
-.right {
-  left: 10%;
 }
 
 /* The actual content */
@@ -53,100 +73,66 @@
 }
 
 .cv-text {
-  max-width: 25ch;
-}
-
-/* Place the timelime to the left */
-.timeline::after {
-  left: 31px;
-}
-
-/* Full-width containers */
-.cv-container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-}
-
-/* Make sure that all arrows are pointing leftwards */
-.cv-container::before {
-  left: 60px;
-  border: medium solid #b2e1ed;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #b2e1ed transparent transparent;
-}
-
-/* Make sure all circles are at the same spot */
-.left::after,
-.right::after {
-  left: 22px;
-}
-
-/* Make all right containers behave like the left ones */
-.right {
-  left: 0%;
+  max-width: 35ch;
 }
 
 /* Media queries - Responsive timeline on screens larger than 768px wide */
 @media (min-width: 768px) {
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    max-width: 910px;
-    position: relative;
-    margin-bottom: 2em;
+  #cv {
+    justify-content: flex-start;
   }
 
   /* The actual timeline (the vertical ruler) */
+  .timeline {
+    width: 36em;
+    flex: 1 1 auto;
+    max-height: 70vh;
+    gap: 0;
+    justify-content: space-around;
+    background: linear-gradient(#b2e1ed, #b2e1ed) no-repeat center / 4px 100%;
+    border: none;
+    margin-bottom: 2em;
+  }
+
+  .timeline::before {
+    left: calc(50% - 2.5ch);
+  }
+
   .timeline::after {
-    content: "";
-    position: absolute;
-    width: 6px;
-    background-color: #b2e1ed;
-    top: 0;
-    bottom: 0;
-    left: calc(67.5% - 2.5ch);
-    z-index: 5;
+    left: calc(50% - 2ch);
   }
 
   /* Container around content */
   .cv-container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-
-  /* The circles on the timeline */
-  .cv-container::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #b2e1ed;
-    border: 4px solid white;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 10;
+    width: 16em;
+    left: 0;
+    flex: 0 1 auto;
   }
 
   /* Place the container to the left */
   .left {
-    left: calc(30.5% - 2.5ch);
+    align-self: flex-start;
   }
 
   /* Place the container to the right */
   .right {
-    left: calc(67.5% - 2.5ch);
+    align-self: flex-end;
+  }
+
+  .cv-container::after {
+    border: 4px solid white;
   }
 
   /* Fix the circle for containers on the right side */
   .right::after {
-    left: -9px;
+    left: unset;
+    right: calc(100% + 2em - 9px);
   }
 
   /* Fix the circle for containers on the left side */
   .left::after {
-    left: 327px;
+    left: calc(100% + 2em - 9px);
+    background: #b2e1ed;
   }
 
   /* The actual content */
