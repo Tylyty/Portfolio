@@ -50,6 +50,7 @@
   color: white;
   padding: 15px;
   opacity: 0.8;
+  max-width: 30ch;
 }
 
 @media (min-width: 768px) {
@@ -87,13 +88,13 @@
   }
 
   .slideText {
-    position: relative;
-    bottom: 65px;
-    left: 10px;
+    position: absolute;
+    /* bottom: calc(100% -2em -12px); */
+    left: calc(50vw - 460px);
     background-color: rgb(44, 43, 43);
     color: white;
     padding: 15px;
     opacity: 0.8;
-    width: fit-content;
+    max-width: fit-content;
   }
 }
