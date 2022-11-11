@@ -86,7 +86,6 @@
   .timeline {
     width: 36em;
     flex: 1 1 auto;
-    max-height: 70vh;
     gap: 0;
     justify-content: space-around;
     background: linear-gradient(#b2e1ed, #b2e1ed) no-repeat center / 4px 100%;
