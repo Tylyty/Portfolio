@@ -97,16 +97,6 @@ h4 {
   position: relative;
 }
 
-.caption {
-  position: relative;
-  bottom: 0px;
-  left: 0;
-  color: rgb(44, 43, 43);
-  background: none;
-  opacity: 0.2;
-  left: 10px;
-}
-
 .hero-text {
   position: relative;
   left: 1%;
@@ -115,7 +105,17 @@ h4 {
   font-weight: bold;
   width: fit-content;
   padding-left: 10%;
-  top: 10vw;
+  top: 20vw;
+}
+
+.caption {
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  color: rgb(44, 43, 43);
+  background: none;
+  opacity: 0.2;
+  left: 10px;
 }
 
 #home img {
