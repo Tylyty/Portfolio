@@ -146,9 +146,6 @@ h4 {
 }
 
 @media (min-width: 768px) {
-  body {
-  }
-
   h1,
   h2 {
     text-align: center;
