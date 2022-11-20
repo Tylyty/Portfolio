@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  margin-top: 15px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -40,7 +39,11 @@ h4 {
   color: rgb(44, 43, 43);
 }
 
-#topnav {
+#navLinks {
+  display: none;
+}
+
+#mobileNav {
   overflow: hidden;
   background-color: rgb(44, 43, 43);
   position: fixed;
@@ -50,7 +53,7 @@ h4 {
   z-index: 9;
 }
 
-#topnav a {
+#mobileNav a {
   color: #f2f2f2;
   z-index: 9;
   padding: 14px;
@@ -59,7 +62,7 @@ h4 {
   display: block;
 }
 
-/* Hide links inside nav-menu (except for logo/home) */
+/* Hide links inside nav-menu (except for home) */
 #burgerLinks {
   top: 100%;
   background: rgb(44, 43, 43);
@@ -68,7 +71,7 @@ h4 {
   max-height: 0;
 }
 
-#topnav div.icon {
+#mobileNav div.icon {
   background: rgb(44, 43, 43);
   position: absolute;
   right: 0;
@@ -80,12 +83,12 @@ h4 {
   justify-content: center;
 }
 
-#topnav a:hover {
+#mobileNav a:hover {
   background-color: #b2e1ed;
   color: rgb(44, 43, 43);
 }
 
-#topnav a.active {
+#mobileNav a.active {
   background-color: #fed728;
   color: rgb(44, 43, 43);
 }
@@ -176,7 +179,7 @@ h4 {
     display: none;
   }
 
-  #topnav #burgerLinks {
+  #topnav #navLinks {
     display: inline-block;
     max-height: none;
   }
