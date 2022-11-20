@@ -43,7 +43,7 @@ h4 {
   display: none;
 }
 
-#mobileNav {
+.mobileNav {
   overflow: hidden;
   background-color: rgb(44, 43, 43);
   position: fixed;
@@ -53,7 +53,7 @@ h4 {
   z-index: 9;
 }
 
-#mobileNav a {
+.mobileNav a {
   color: #f2f2f2;
   z-index: 9;
   padding: 14px;
@@ -71,7 +71,7 @@ h4 {
   max-height: 0;
 }
 
-#mobileNav div.icon {
+.mobileNav div.nav-icon {
   background: rgb(44, 43, 43);
   position: absolute;
   right: 0;
@@ -83,12 +83,12 @@ h4 {
   justify-content: center;
 }
 
-#mobileNav a:hover {
+.mobileNav a:hover {
   background-color: #b2e1ed;
   color: rgb(44, 43, 43);
 }
 
-#mobileNav a.active {
+.mobileNav a.active {
   background-color: #fed728;
   color: rgb(44, 43, 43);
 }
@@ -154,7 +154,7 @@ h4 {
     text-align: center;
   }
 
-  #topnav {
+  .topnav {
     background-color: rgb(44, 43, 43);
     overflow: hidden;
     z-index: 99;
@@ -165,7 +165,7 @@ h4 {
     width: 100%;
   }
 
-  #topnav a {
+  .topnav a {
     float: left;
     display: inline;
     text-align: center;
@@ -175,21 +175,21 @@ h4 {
     color: white;
   }
 
-  #topnav div.icon {
+  .topnav div.icon {
     display: none;
   }
 
-  #topnav #navLinks {
+  .topnav #navLinks {
     display: inline-block;
     max-height: none;
   }
 
-  #topnav a:hover {
+  .topnav a:hover {
     background-color: #b2e1ed;
     color: rgb(44, 43, 43);
   }
 
-  #topnav a.active {
+  .topnav a.active {
     background-color: #fed728;
     color: rgb(44, 43, 43);
   }
