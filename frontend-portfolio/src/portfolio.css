@@ -90,7 +90,7 @@
   .slideText {
     position: absolute;
     /* bottom: calc(100% -2em -12px); */
-    left: calc(50vw - 460px);
+    left: calc(50vw - 450px);
     background-color: rgb(44, 43, 43);
     color: white;
     padding: 15px;
