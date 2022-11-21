@@ -2,7 +2,7 @@
 
 ## code src:
 
-mobile menu dropdown: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+mobile menu dropdown: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp <br>
 lazy load: https://alvarotrigo.com/blog/css-animations-scroll
 parallax effect: https://pixabay.com/de/vectors/kreislauf-h%c3%bcgel-minimal-hintergrund-2145189/
 hero-img: https://www.w3schools.com/howto/howto_css_hero_image.asp
