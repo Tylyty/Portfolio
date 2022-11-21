@@ -118,7 +118,6 @@ h4 {
 .caption {
   position: absolute;
   bottom: 5px;
-  left: 0;
   color: rgb(44, 43, 43);
   background: none;
   opacity: 0.2;
@@ -150,6 +149,15 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+footer {
+  color: rgb(44, 43, 43);
+  background: none;
+  opacity: 0.4;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: small;
 }
 
 @media (min-width: 768px) {

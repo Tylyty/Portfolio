@@ -27,6 +27,7 @@ input[type="submit"] {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  font-size: medium;
 }
 
 input[type="submit"]:hover {
