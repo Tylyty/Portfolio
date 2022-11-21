@@ -52,8 +52,7 @@ i.fa.fa {
   margin-bottom: 30px;
 }
 
-#crm-bar {
-  animation: crm-fill 2s forwards;
+.crm-bar {
 }
 
 @keyframes crm-fill {
@@ -62,8 +61,8 @@ i.fa.fa {
   }
 }
 
-#gpo-bar {
-  animation: gpo-fill 2s forwards;
+.gpo-bar {
+  animation: gpo-fill 5s forwards;
 }
 
 @keyframes gpo-fill {
@@ -72,8 +71,8 @@ i.fa.fa {
   }
 }
 
-#re-bar {
-  animation: re-fill 2s forwards;
+.re-bar {
+  animation: re-fill 5s forwards;
 }
 
 @keyframes re-fill {
@@ -82,8 +81,8 @@ i.fa.fa {
   }
 }
 
-#html-bar {
-  animation: html-fill 2s forwards;
+.html-bar {
+  animation: html-fill 5s forwards;
 }
 
 @keyframes html-fill {
@@ -92,8 +91,8 @@ i.fa.fa {
   }
 }
 
-#css-bar {
-  animation: css-fill 2s forwards;
+.css-bar {
+  animation: css-fill 5s forwards;
 }
 
 @keyframes css-fill {
