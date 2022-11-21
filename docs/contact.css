@@ -12,7 +12,6 @@ select {
 textarea {
   width: 100%;
   padding: 12px 15px;
-  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -51,6 +50,13 @@ input[type="submit"]:hover {
   margin-left: 10px;
 }
 
+input#botcheck {
+  height: 15px;
+  width: 15px;
+  position: relative;
+  left: 0;
+}
+
 @media (min-width: 768px) {
   ::placeholder {
     position: absolute;
@@ -79,6 +85,10 @@ input[type="submit"]:hover {
 
   #submit {
     grid-area: submit;
+  }
+
+  input#botcheck.hidden {
+    grid-area: check;
   }
 
   .contact-form {

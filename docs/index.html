@@ -266,14 +266,23 @@
             <div class="container reveal">
                 <h2>Kontaktformular</h2>
                 <div id="kontakt">
-                    <section class="contact-form">
-                        <input id="fname" type="text" name="fname" placeholder="Vorname"><br>
-                        <input id="lname" type="text" name="lname" placeholder="Nachname"><br>
-                        <input id="email" type="text" name="email" placeholder="E-Mail"><br>
-                        <input id="topic" type="text" name="topic" placeholder="Thema"><br>
-                        <textarea id="message" type="text" name="message" placeholder="Ihre Nachricht"></textarea><br>
-                        <input id="submit" type="submit" value="Senden">
-                    </section>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="6b13a7de-b9dd-4e5a-a504-24c21482844e">
+                        <input type="hidden" name="subject" value="Neue E-Mail von tylyty.github.io">
+                        <input type="hidden" name="from_name" value="tylyty.github.io">
+                        <section class="contact-form">
+                            <input id="fname" type="text" name="fname" required placeholder="Vorname"><br>
+                            <input id="lname" type="text" name="lname" required placeholder="Nachname"><br>
+                            <input id="email" type="text" name="email" required placeholder="E-Mail"><br>
+                            <input id="topic" type="text" name="topic" required placeholder="Thema"><br>
+                            <textarea id="message" type="text" required name="message"
+                                placeholder="Ihre Nachricht"></textarea><br>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <!-- <input id="botcheck" type="checkbox" name="botcheck" class="hidden"> -->
+                            <!-- <label class="botLabel">Ich bin kein Roboter</label> -->
+                            <input id="submit" type="submit" value="Senden">
+                        </section>
+                    </form>
                 </div>
             </div>
         </section>
