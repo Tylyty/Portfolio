@@ -16,6 +16,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
+  margin: 8px 0;
 }
 
 input[type="submit"] {
@@ -51,12 +52,12 @@ input[type="submit"]:hover {
   margin-left: 10px;
 }
 
-input#botcheck {
+/* input#botcheck {
   height: 15px;
   width: 15px;
   position: relative;
-  left: 0;
-}
+  left: 0; 
+} */
 
 @media (min-width: 768px) {
   ::placeholder {
@@ -88,9 +89,9 @@ input#botcheck {
     grid-area: submit;
   }
 
-  input#botcheck.hidden {
+  /* input#botcheck.hidden {
     grid-area: check;
-  }
+  } */
 
   .contact-form {
     display: grid;
@@ -114,5 +115,9 @@ input#botcheck {
 
   #kontakt {
     margin-bottom: 30px;
+  }
+
+  textarea {
+    margin: 0;
   }
 }
