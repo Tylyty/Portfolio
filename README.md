@@ -1,6 +1,6 @@
-# Portfolio-Seite
+# Portfolio Website
 
-## Code-Src:
+## code src:
 
 mobile menu dropdown: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 lazy load: https://alvarotrigo.com/blog/css-animations-scroll
@@ -14,7 +14,7 @@ slide-show with buttons: https://www.w3schools.com/w3css/w3css_slideshow.asp
 contact form: https://www.w3schools.com/css/css_form.asp
 feb-form API: https://api.web3forms.com
 
-## Asset-Src:
+## asset src:
 
 Font: https://xd.adobe.com/ideas/principles/web-design/best-modern-fonts-for-websites/
 Font: https://xd.adobe.com/ideas/principles/web-design/best-modern-fonts-for-websites/
