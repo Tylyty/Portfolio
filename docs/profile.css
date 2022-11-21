@@ -53,6 +53,7 @@ i.fa.fa {
 }
 
 .crm-bar {
+  animation: crm-fill 5s forwards;
 }
 
 @keyframes crm-fill {
