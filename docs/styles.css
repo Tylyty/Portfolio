@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  margin-top: 15px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -40,7 +39,11 @@ h4 {
   color: rgb(44, 43, 43);
 }
 
-#topnav {
+#navLinks {
+  display: none;
+}
+
+.mobileNav {
   overflow: hidden;
   background-color: rgb(44, 43, 43);
   position: fixed;
@@ -50,7 +53,7 @@ h4 {
   z-index: 9;
 }
 
-#topnav a {
+.mobileNav a {
   color: #f2f2f2;
   z-index: 9;
   padding: 14px;
@@ -59,7 +62,7 @@ h4 {
   display: block;
 }
 
-/* Hide links inside nav-menu (except for logo/home) */
+/* Hide links inside nav-menu (except for home) */
 #burgerLinks {
   top: 100%;
   background: rgb(44, 43, 43);
@@ -68,7 +71,7 @@ h4 {
   max-height: 0;
 }
 
-#topnav div.icon {
+.mobileNav div.nav-icon {
   background: rgb(44, 43, 43);
   position: absolute;
   right: 0;
@@ -80,14 +83,18 @@ h4 {
   justify-content: center;
 }
 
-#topnav a:hover {
+.mobileNav a:hover {
   background-color: #b2e1ed;
   color: rgb(44, 43, 43);
 }
 
-#topnav a.active {
+.mobileNav a.active {
   background-color: #fed728;
   color: rgb(44, 43, 43);
+}
+
+#home {
+  position: relative;
 }
 
 .hero-image {
@@ -97,28 +104,30 @@ h4 {
   position: relative;
 }
 
-.caption {
-  position: relative;
-  bottom: 0px;
-  left: 0;
-  color: rgb(44, 43, 43);
-  background: none;
-  opacity: 0.2;
-}
-
 .hero-text {
-  position: relative;
+  position: absolute;
   left: 1%;
   color: rgb(44, 43, 43);
   font-size: 7vw;
   font-weight: bold;
   width: fit-content;
   padding-left: 10%;
-  top: 10vw;
+  top: 20vw;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  color: rgb(44, 43, 43);
+  background: none;
+  opacity: 0.2;
+  left: 10px;
 }
 
 #home img {
   width: 100vw;
+  margin-top: 35px;
 }
 
 .reveal {
@@ -144,15 +153,12 @@ h4 {
 }
 
 @media (min-width: 768px) {
-  body {
-  }
-
   h1,
   h2 {
     text-align: center;
   }
 
-  #topnav {
+  .topnav {
     background-color: rgb(44, 43, 43);
     overflow: hidden;
     z-index: 99;
@@ -163,7 +169,7 @@ h4 {
     width: 100%;
   }
 
-  #topnav a {
+  .topnav a {
     float: left;
     display: inline;
     text-align: center;
@@ -173,26 +179,32 @@ h4 {
     color: white;
   }
 
-  #topnav div.icon {
+  .topnav div.icon {
     display: none;
   }
 
-  #topnav #burgerLinks {
+  .topnav #navLinks {
     display: inline-block;
     max-height: none;
   }
 
-  #topnav a:hover {
+  .topnav a:hover {
     background-color: #b2e1ed;
     color: rgb(44, 43, 43);
   }
 
-  #topnav a.active {
+  .topnav a.active {
     background-color: #fed728;
     color: rgb(44, 43, 43);
   }
 
-  .hero-image {
+  #home img {
+    width: 100vw;
+    margin-top: 55px;
+  }
+
+  .caption {
+    left: 10px;
   }
 
   .parallax {

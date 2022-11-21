@@ -14,367 +14,275 @@
 </head>
 
 <body>
-    <div id="topnav">
-        <div>
-            <a href="#home" class="active">Home</a>
-            <div class="icon" onclick="mobileMenu()">
-                <img src="assets/burger-menu.svg">
+    <header>
+        <div class="mobileNav">
+            <div>
+                <a href="#home" class="active">Home</a>
+                <div class="nav-icon" onclick="mobileMenu()">
+                    <img src="assets/burger-menu.svg">
+                </div>
+            </div>
+            <div id="burgerLinks">
+                <a href="#profile">Profil</a>
+                <a href="#cv">Lebenslauf</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#kontakt">Kontakt</a>
             </div>
         </div>
-        <div id="burgerLinks">
-            <a href="#profile">Profil</a>
-            <a href="#cv">Lebenslauf</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#kontakt">Kontakt</a>
+        <div class="topnav">
+            <div>
+                <a href="#home" class="active">Home</a>
+            </div>
+            <div id="navLinks">
+                <a href="#profile">Profil</a>
+                <a href="#cv">Lebenslauf</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
         </div>
+        <section id="home">
+            <!-- src= https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+            <div class="hero-text">Busy as a Bee</div>
+            <img src="assets/bee-cover.png">
+            <div class="caption">Quelle: https://pixabay.com/</div>
+        </section>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="container reveal">
+                <div class="grid-container-profile">
+                    <img class="profile-pic" src="assets/profile-pic-anna.jpg" alt="profile-picture">
+                    <section class="profile-content">
+                        <div>
+                            <h4>Anna Julia Lang</h4>
+                        </div>
+                        <div>Verantwortliche Business Services IT</div>
+                        <!-- <div>14.07.1995</div> -->
+                        <p>
+                            Kommunikation bedeutet nichts anderes, als sich jemandem mitzuteilen und darauf eine
+                            Reaktion zu
+                            erhalten. Und wenn unsere Stimme zu leise ist, machen wir auf andere Weise auf uns
+                            aufmerksam &nbsp;&ndash;
+                            in
+                            Westafrika entstanden Trommelsprachen und die Indianer nutzten Rauchzeichen. Heute
+                            kommunizieren
+                            wir
+                            über verschiedenste Kanäle, wie zum Beispiel das Netz oder die Printmedien. Es ist
+                            schon
+                            länger
+                            mein
+                            Wunsch, die heutigen Kommunikationsmittel besser kennenzulernen. Im Sommer 2012, als
+                            ich
+                            ungefähr
+                            vier Wochen lang bei Stämpfli in der Handarbeit der Druckerei aushelfen durfte, habe
+                            ich
+                            mich so
+                            wohl gefühlt, dass ich beschlossen habe, später eine Rückkehr zu versuchen.
+                        </p>
+                        <p>
+                            Um andere wichtige Aspekte der Kommunikation zu vertiefen, wie etwa die Mimik oder
+                            den
+                            zwischenmenschlichen Umgang, habe ich mich in der Zwischenzeit für eine Ausbildung
+                            im
+                            Tourismus
+                            entschieden. Während meiner KV-Ausbildung im Hotel Victoria-Jungfrau in Interlaken
+                            und
+                            in
+                            dessen
+                            Schwesterhaus, dem Hotel Bellevue Palace in Bern, durfte ich viel Erfahrung im
+                            Umgang
+                            mit
+                            verschiedenen Kulturen und Gästegruppen sammeln. Und da meine Familie von einer
+                            Berner
+                            Buchhandlung
+                            abstammt, ist es kein Wunder, dass mir Bücher sehr liegen.
+                        </p>
+                    </section>
 
-    </div>
-    <div class="content">
-        <header>
-            <section id="home">
-                <!-- src= https://www.w3schools.com/howto/howto_css_hero_image.asp -->
-                <div class="hero-text">Busy as a Bee</div>
-                <img src="assets/bee-cover.png">
-                <div class="caption">Referenz: https://pixabay.com/</div>
-            </section>
-            <section id="profile">
-                <div class="container reveal">
-                    <div class="grid-container-profile">
-                        <img class="profile-pic" src="assets/profile-pic-anna.jpg" alt="profile-picture">
-                        <section class="profile-content">
-                            <div>
-                                <h4>Anna Julia Lang</h4>
-                            </div>
-                            <div>Verantwortliche Business Services IT</div>
-                            <div>14.07.1995</div>
-                            <p>
-                                Kommunikation bedeutet nichts anderes, als sich jemandem mitzuteilen und darauf eine
-                                Reaktion zu
-                                erhalten. Und wenn unsere Stimme zu leise ist, machen wir auf andere Weise auf uns
-                                aufmerksam &nbsp;&ndash;
-                                in
-                                Westafrika entstanden Trommelsprachen und die Indianer nutzten Rauchzeichen. Heute
-                                kommunizieren
-                                wir
-                                über verschiedenste Kanäle, wie zum Beispiel das Netz oder die Printmedien. Es ist
-                                schon
-                                länger
-                                mein
-                                Wunsch, die heutigen Kommunikationsmittel besser kennenzulernen. Im Sommer 2012, als
-                                ich
-                                ungefähr
-                                vier Wochen lang bei Stämpfli in der Handarbeit der Druckerei aushelfen durfte, habe
-                                ich
-                                mich so
-                                wohl gefühlt, dass ich beschlossen habe, später eine Rückkehr zu versuchen.
-                            </p>
-                            <p>
-                                Um andere wichtige Aspekte der Kommunikation zu vertiefen, wie etwa die Mimik oder
-                                den
-                                zwischenmenschlichen Umgang, habe ich mich in der Zwischenzeit für eine Ausbildung
-                                im
-                                Tourismus
-                                entschieden. Während meiner KV-Ausbildung im Hotel Victoria-Jungfrau in Interlaken
-                                und
-                                in
-                                dessen
-                                Schwesterhaus, dem Hotel Bellevue Palace in Bern, durfte ich viel Erfahrung im
-                                Umgang
-                                mit
-                                verschiedenen Kulturen und Gästegruppen sammeln. Und da meine Familie von einer
-                                Berner
-                                Buchhandlung
-                                abstammt, ist es kein Wunder, dass mir Bücher sehr liegen.
-                            </p>
-                        </section>
-
-
-                        <div class="skills">
-                            <h3>Skills</h3>
-                            <!--Skill Bars src: https://dev.to/shantanu_jana/animated-skills-bar-html-and-css-1fbl -->
-                            <div class="skill-details">
-                                <span><img class="icon" src="assets/icon-crm365.svg"> Microsoft Dynamics 365
-                                    CRM</span>
-                                <span>zu 85%</span>
-                            </div>
-                            <div class="bar">
-                                <div id="crm-bar"></div>
-                            </div>
-
-                            <div class="skill-details">
-                                <span><img class="icon" src="assets/icon-RE.png"> Requirements Engineering</span>
-                                <span>zu 75%</span>
-                            </div>
-                            <div class="bar">
-                                <div id="re-bar"></div>
-                            </div>
-                            <div class="skill-details">
-                                <span><img class="icon" src="assets/icon-gpo.svg"> Prozessoptimierung</span>
-                                <span>zu 70%</span>
-                            </div>
-                            <div class="bar">
-                                <div id="gpo-bar"></div>
-                            </div>
-                            <div class="skill-details">
-                                <span><img class="icon" src="assets/icon-html.svg"> HTML</span>
-                                <span>zu 60%</span>
-                            </div>
-                            <div class="bar">
-                                <div id="html-bar"></div>
-                            </div>
-                            <div class="skill-details">
-                                <span><img class="icon" src="assets/icon-css.svg"> CSS</span>
-                                <span>zu 60%</span>
-                            </div>
-                            <div class="bar">
-                                <div id="css-bar"></div>
-                            </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <!--Skill Bars src: https://dev.to/shantanu_jana/animated-skills-bar-html-and-css-1fbl -->
+                        <div class="skill-details">
+                            <span><img class="icon" src="assets/icon-crm365.svg"> Microsoft Dynamics 365
+                                CRM</span>
+                            <span>zu 85%</span>
+                        </div>
+                        <div class="bar">
+                            <div id="crm-bar"></div>
                         </div>
 
-                        <div class="grid-item-lang-hobbies">
-                            <div class="language">
-                                <h3>Sprachen</h3>
-                                <ul>
-                                    <li><img class="icon" src="assets/icon-swiss.png"> Deutsch</li>
-                                    <li><img class="icon" src="assets/icon-england.png"> Englisch</li>
-                                    <li><img class="icon" src="assets/icon-french.png"> Französisch</li>
-                                </ul>
-                            </div>
+                        <div class="skill-details">
+                            <span><img class="icon" src="assets/icon-RE.png"> Requirements Engineering</span>
+                            <span>zu 75%</span>
+                        </div>
+                        <div class="bar">
+                            <div id="re-bar"></div>
+                        </div>
+                        <div class="skill-details">
+                            <span><img class="icon" src="assets/icon-gpo.svg"> Prozessoptimierung</span>
+                            <span>zu 70%</span>
+                        </div>
+                        <div class="bar">
+                            <div id="gpo-bar"></div>
+                        </div>
+                        <div class="skill-details">
+                            <span><img class="icon" src="assets/icon-html.svg"> HTML</span>
+                            <span>zu 60%</span>
+                        </div>
+                        <div class="bar">
+                            <div id="html-bar"></div>
+                        </div>
+                        <div class="skill-details">
+                            <span><img class="icon" src="assets/icon-css.svg"> CSS</span>
+                            <span>zu 60%</span>
+                        </div>
+                        <div class="bar">
+                            <div id="css-bar"></div>
+                        </div>
+                    </div>
 
-                            <div class="hobbies">
-                                <h3>Hobbies</h3>
-                                <!-- icon src= https://feathericons.com/ -->
-                                <ul>
-                                    <li><img class="icon" src="assets/icon-edit.svg"> Zeichnen</li>
-                                    <li><img class="icon" src="assets/icon-monitor.svg"> Gaming</li>
-                                    <li><img class="icon" src="assets/icon-book-open.svg"> Lesen</li>
-                                    <li><img class="icon" src="assets/icon-camera.svg"> Fotografie</li>
-                                    <li><img class="icon" src="assets/icon-map.svg"> Fahrradfahren</li>
-                                </ul>
-                            </div>
+                    <div class="grid-item-lang-hobbies">
+                        <div class="language">
+                            <h3>Sprachen</h3>
+                            <ul>
+                                <li><img class="icon" src="assets/icon-swiss.png"> Deutsch</li>
+                                <li><img class="icon" src="assets/icon-england.png"> Englisch</li>
+                                <li><img class="icon" src="assets/icon-french.png"> Französisch</li>
+                            </ul>
+                        </div>
+
+                        <div class="hobbies">
+                            <h3>Hobbies</h3>
+                            <!-- icon src= https://feathericons.com/ -->
+                            <ul>
+                                <li><img class="icon" src="assets/icon-edit.svg"> Zeichnen</li>
+                                <li><img class="icon" src="assets/icon-monitor.svg"> Gaming</li>
+                                <li><img class="icon" src="assets/icon-book-open.svg"> Lesen</li>
+                                <li><img class="icon" src="assets/icon-camera.svg"> Fotografie</li>
+                                <li><img class="icon" src="assets/icon-map.svg"> Fahrradfahren</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <div class="container reveal">
                 <h2>Lieblingsbücher</h2>
                 <ul id="hpbooks"></ul>
             </div>
-        </header>
-
-
-        <main>
-            <!-- parallax img src= https://pixabay.com/de/vectors/kreislauf-h%c3%bcgel-minimal-hintergrund-2145189/ -->
-            <div class="parallax"></div>
+        </section>
+        <!-- parallax img src= https://pixabay.com/de/vectors/kreislauf-h%c3%bcgel-minimal-hintergrund-2145189/ -->
+        <div class="parallax"></div>
+        <div class="container reveal">
             <section id="cv">
-                <div class="container reveal">
-                    <h2>Lebenslauf</h2>
-                    <!-- src= https://www.w3schools.com/howto/howto_css_timeline.asp -->
-                    <div class="timeline">
-                        <div class="cv-container right">
-                            <div class="cv-container-content">
-                                <h4>2022</h4>
-                                <div class="cv-text">Bachelor of Science in Wirtschaftsinformatik<br>
-                                    <i>Berner Fachhochschule</i>
-                                </div>
+                <h2>Lebenslauf</h2>
+                <!-- src= https://veracahrim.github.io/website-example/ -->
+                <div class="timeline">
+                    <div class="cv-container right">
+                        <div class="cv-container-content">
+                            <h4> Bachelor of Science in Wirtschaftsinformatik</h4>
+                            <div class="cv-text"><i>2020-2024</i><br>
+                                <div>Berner Fachhochschule</div>
                             </div>
                         </div>
-                        <div class="cv-container left">
-                            <div class="cv-container-content">
-                                <h4>2021</h4>
-                                <div class="cv-text">Verantwortliche Business Services<br>
-                                    <i>Stämpfli AG</i>
-                                </div>
+                    </div>
+                    <div class="cv-container left">
+                        <div class="cv-container-content">
+                            <h4>Verantwortliche Business Services</h4>
+                            <div class="cv-text"><i>ab 2020</i><br>
+                                <div>Stämpfli AG</div>
                             </div>
                         </div>
-                        <div class="cv-container right">
-                            <div class="cv-container-content">
-                                <h4>2017</h4>
-                                <div class="cv-text">Projektleitung<br>
-                                    <i>Stämpfli AG</i>
-                                </div>
+                    </div>
+                    <div class="cv-container right">
+                        <div class="cv-container-content">
+                            <h4>Projektleitung</h4>
+                            <div class="cv-text"><i>2017-2020</i><br>
+                                <div>Stämpfli AG</div>
                             </div>
                         </div>
-                        <div class="cv-container left">
-                            <div class="cv-container-content">
-                                <h4>2016</h4>
-                                <div class="cv-text">Berfusmatur<br>
-                                    <i>feusi Bildungszentrum</i>
-                                </div>
+                    </div>
+                    <div class="cv-container left">
+                        <div class="cv-container-content">
+                            <h4>Berfusmatur</h4>
+                            <div class="cv-text"><i>2016-2017</i><br>
+                                <div>feusi Bildungszentrum</div>
                             </div>
                         </div>
-                        <div class="cv-container right">
-                            <div class="cv-container-content">
-                                <h4>2015</h4>
-                                <div class="cv-text">Rezeptionistin<br>
-                                    <i>Bellevue Palace Bern</i>
-                                </div>
+                    </div>
+                    <div class="cv-container right">
+                        <div class="cv-container-content">
+                            <h4>Rezeptionistin</h4>
+                            <div class="cv-text"><i>2015-2016</i><br>
+                                <div>Bellevue Palace Bern</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-container left">
+                        <div class="cv-container-content">
+                            <h4>Lehrstelle KV (HGT)</h4>
+                            <div class="cv-text"><i>2012-2015</i><br>
+                                <div>Victoria-Jungfrau Grand Hotel & Spa</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="parallax"></div>
-            <section id="portfolio">
-                <div class="container reveal">
-                    <h2>Portfolio</h2>
-                    <div class="slideshow-container">
-                        <!-- src= https://www.w3schools.com/w3css/w3css_slideshow.asp -->
-                        <div class="mySlides"><a
-                                href="https://medium.com/staempfli/90-von-10-000-bilder-von-bern-4bf9b57dc585"><img
-                                    class="slidePic" src="assets/marzili-bern-buch.jpeg"></a>
-                            <div class="slideText">Blog-Beitrag zum Buch "Bern"</div>
-                        </div>
-
-                        <div class="mySlides"><a
-                                href="https://marginalie.staempfli.com/artikel/buchproduktion-marc-trauffer-dae-mit-de-chueeh"><img
-                                    class="slidePic" src="assets/trauffer-kampagne.jpg"></a>
-                            <div class="slideText">Kampagne zur Buchproduktion von Marc A. Trauffer</div>
-                        </div>
-                        <div class="mySlides"><a
-                                href="https://marginalie.staempfli.com/artikel/ich-bin-ein-mensch-mit-sehr-viel-energie"><img
-                                    class="slidePic" src="assets/veljko-marginalie.jpeg"></a>
-                            <div class="slideText">Verfassung Portrait von Veljko Colic zum Thema "Identität"</div>
-                        </div>
-                        <div class="mySlides"><a
-                                href="https://marginalie.staempfli.com/artikel/ein-planer-zu-werden-war-nicht-mein-plan"><img
-                                    class="slidePic" src="assets/daniel-marginalie.jpeg"></a>
-                            <div class="slideText">Verfassung Portrait von Daniel Jakob zum Thema "Systeme und Prozesse"
-                            </div>
-                        </div>
-
-                        <button class="slideLeft" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="slideRight" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <div class="parallax"></div>
+        <section id="portfolio">
+            <div class="container reveal">
+                <h2>Portfolio</h2>
+                <div class="slideshow-container">
+                    <!-- src= https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                    <div class="mySlides"><a
+                            href="https://medium.com/staempfli/90-von-10-000-bilder-von-bern-4bf9b57dc585"><img
+                                class="slidePic" src="assets/marzili-bern-buch.jpeg"></a>
+                        <div class="slideText">Blog-Beitrag zum Buch "Bern"</div>
                     </div>
-                </div>
-            </section>
-            <section>
-                <div class="container reveal">
-                    <div id="kontakt">
-                        <h2>Kontaktformular</h2>
-                        <section class="contact-form">
-                            <input id="fname" type="text" name="fname" placeholder="Vorname"><br>
-                            <input id="lname" type="text" name="lname" placeholder="Nachname"><br>
-                            <input id="email" type="text" name="email" placeholder="E-Mail"><br>
-                            <input id="topic" type="text" name="topic" placeholder="Thema"><br>
-                            <input id="message" type="text" name="message" placeholder="Ihre Nachricht"><br>
-                            <input id="submit" type="submit" value="Senden">
-                        </section>
+
+                    <div class="mySlides"><a
+                            href="https://marginalie.staempfli.com/artikel/buchproduktion-marc-trauffer-dae-mit-de-chueeh"><img
+                                class="slidePic" src="assets/trauffer-kampagne.jpg"></a>
+                        <div class="slideText">Kampagne zur Buchproduktion von Marc A. Trauffer</div>
                     </div>
+                    <div class="mySlides"><a
+                            href="https://marginalie.staempfli.com/artikel/ich-bin-ein-mensch-mit-sehr-viel-energie"><img
+                                class="slidePic" src="assets/veljko-marginalie.jpeg"></a>
+                        <div class="slideText">Verfassung Portrait von Veljko Colic zum Thema "Identität"</div>
+                    </div>
+                    <div class="mySlides"><a
+                            href="https://marginalie.staempfli.com/artikel/ein-planer-zu-werden-war-nicht-mein-plan"><img
+                                class="slidePic" src="assets/daniel-marginalie.jpeg"></a>
+                        <div class="slideText">Verfassung Portrait von Daniel Jakob zum Thema "Systeme und Prozesse"
+                        </div>
+                    </div>
+
+                    <button class="slideLeft" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="slideRight" onclick="plusDivs(1)">&#10095;</button>
                 </div>
-            </section>
+            </div>
+        </section>
+        <section>
+            <div class="container reveal">
+                <h2>Kontaktformular</h2>
+                <div id="kontakt">
+                    <section class="contact-form">
+                        <input id="fname" type="text" name="fname" placeholder="Vorname"><br>
+                        <input id="lname" type="text" name="lname" placeholder="Nachname"><br>
+                        <input id="email" type="text" name="email" placeholder="E-Mail"><br>
+                        <input id="topic" type="text" name="topic" placeholder="Thema"><br>
+                        <textarea id="message" type="text" name="message" placeholder="Ihre Nachricht"></textarea><br>
+                        <input id="submit" type="submit" value="Senden">
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        </main>
-
-        <footer>
-
-
-        </footer>
-
-    </div>
-    <script>
-        /* mobileMenu src=https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
-        function mobileMenu() {
-            const burgerLinks = document.getElementById("burgerLinks");
-            if (burgerLinks.style.maxHeight === '0px') {
-                burgerLinks.style.maxHeight = 'fit-content'
-            } else {
-                burgerLinks.style.maxHeight = 0
-            }
-        }
-
-        /* slideSchow src= https://www.w3schools.com/w3css/w3css_slideshow.asp */
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 4000); // Change image every xy seconds
-        }
-
-        /* slideSchow-buttons src= https://www.w3schools.com/w3css/w3css_slideshow.asp */
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-
-        /* lazy-load src= https://alvarotrigo.com/blog/css-animations-scroll/ */
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
-
-
-        /* API src= https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data-de */
-        /* content src= https://theboywholivedapi.herokuapp.com/documentation */
-        function createNode(element) {
-            return document.createElement(element);
-        }
-
-        function append(parent, el) {
-            return parent.appendChild(el);
-        }
-
-        const ul = document.getElementById('hpbooks');
-        const url = 'https://legacy--api.herokuapp.com/api/v1/books';
-
-        fetch(url)
-            .then((resp) => resp.json())
-            .then(function (data) {
-                let hpbooks = data;
-                return hpbooks.map(function (book) {
-                    let li = createNode('li');
-                    let img = createNode('img');
-                    let span = createNode('span');
-                    img.src = book.image_url;
-                    span.innerHTML = `${book.title}`;
-                    append(li, img);
-                    append(li, span);
-                    append(ul, li);
-                })
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-
-
-
-
+    <footer>
+    </footer>
+    <script language="javascript" type="text/javascript" src="scripts.js">
     </script>
 </body>
-
 
 </html>
