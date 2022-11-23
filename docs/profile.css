@@ -1,3 +1,7 @@
+#profile {
+  scroll-margin-top: 100px;
+}
+
 .profile-pic {
   width: 100vw;
 }
