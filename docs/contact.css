@@ -1,3 +1,8 @@
+.contact-section {
+  margin-top: 100px;
+  max-height: 400px;
+}
+
 input[type="text"],
 select {
   width: 100%;
