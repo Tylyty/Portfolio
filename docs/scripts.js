@@ -100,7 +100,7 @@ fetch(url)
     console.log(error);
   });
 
-/* form */
+/* form src = https://docs.web3forms.com/how-to-guides/html-and-javascript */
 const form = document.getElementById("form");
 const result = document.getElementById("result");
 

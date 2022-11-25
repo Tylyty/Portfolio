@@ -12,7 +12,8 @@ API "how-to": https://www.digitalocean.com/community/tutorials/how-to-use-the-ja
 CV-timeline: https://veracahrim.github.io/website-example/ <br>
 slide-show with buttons: https://www.w3schools.com/w3css/w3css_slideshow.asp <br>
 contact form: https://www.w3schools.com/css/css_form.asp <br>
-feb-form API: https://api.web3forms.com <br>
+web-form API: https://api.web3forms.com <br>
+form clear and submit message: https://docs.web3forms.com/how-to-guides/html-and-javascript
 
 ## asset src:
 
