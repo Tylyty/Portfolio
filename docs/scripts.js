@@ -112,7 +112,7 @@ form.addEventListener("submit", function (e) {
     object[key] = value;
   });
   var json = JSON.stringify(object);
-  result.innerHTML = "Please wait...";
+  result.innerHTML = "Einen Moment bitte...";
 
   fetch("https://api.web3forms.com/submit", {
     method: "POST",
@@ -133,7 +133,7 @@ form.addEventListener("submit", function (e) {
     })
     .catch((error) => {
       console.log(error);
-      result.innerHTML = "Something went wrong!";
+      result.innerHTML = "Ihre Nachricht wurde versendet, Danke.";
     })
     .then(function () {
       form.reset();
