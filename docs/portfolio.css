@@ -1,5 +1,5 @@
 #portfolio {
-  margin-top: 250px;
+  margin-top: 320px;
   scroll-margin-top: 250px;
 }
 
@@ -59,6 +59,11 @@
 }
 
 @media (min-width: 768px) {
+  #portfolio {
+    margin-top: 250px;
+    scroll-margin-top: 250px;
+  }
+
   .slideshow-container {
     display: flex;
     justify-content: center;

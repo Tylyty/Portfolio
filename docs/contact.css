@@ -3,6 +3,10 @@
   max-height: 400px;
 }
 
+.container.reveal.active {
+  bottom: 70px;
+}
+
 input[type="text"],
 select {
   width: 100%;
@@ -124,5 +128,9 @@ input[type="submit"]:hover {
 
   textarea {
     margin: 0;
+  }
+
+  .container.reveal.active {
+    bottom: 10px;
   }
 }

@@ -1,5 +1,5 @@
 #profile {
-  margin-top: 200px;
+  margin-top: 230px;
   scroll-margin-top: 250px;
 }
 
@@ -129,6 +129,11 @@ ul#hpbooks li span {
 }
 
 @media (min-width: 768px) {
+  #profile {
+    margin-top: 200px;
+    scroll-margin-top: 250px;
+  }
+
   .profile-content {
     grid-area: profile-content;
   }
