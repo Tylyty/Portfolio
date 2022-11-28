@@ -18,7 +18,21 @@
 
 .language ul {
   list-style: none;
-  padding-inline-start: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.language li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.4rem 0;
+}
+
+.language li span {
+  padding-top: 5px;
 }
 
 img.icon {
@@ -27,6 +41,15 @@ img.icon {
   position: relative;
   top: 5px;
 }
+
+li:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+/* img.icon:hover {
+  transform: scale(1.2); 
+} */
 
 i.fa.fa {
   font-size: 24px;
@@ -107,27 +130,6 @@ i.fa.fa {
   }
 }
 
-ul#hpbooks {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin-left: 10px;
-}
-
-ul#hpbooks li img {
-  max-height: 200px;
-}
-
-ul#hpbooks li {
-  margin-bottom: 20px;
-}
-
-ul#hpbooks li span {
-  display: block;
-  max-width: 16ch;
-}
-
 @media (min-width: 768px) {
   #profile {
     margin-top: 200px;
@@ -162,17 +164,26 @@ ul#hpbooks li span {
     max-width: 350px;
   }
 
-  ul#hpbooks {
-    list-style: none;
+  .language li {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    margin-right: calc(50vw - 500px);
-    margin-left: calc(50vw - 500px);
+    flex-direction: column;
+    align-items: center;
+    padding: 1.6rem 0;
   }
 
-  ul#hpbooks li span {
+  .language li span {
+    padding-top: 6px;
+  }
+
+  .langTitle {
     display: block;
-    max-width: 16ch;
+    text-align: center;
+  }
+
+  .language ul {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
+    margin-block: 0;
   }
 }

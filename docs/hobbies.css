@@ -1,0 +1,121 @@
+.favor-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.favor-list > li {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  justify-content: baseline;
+  flex-direction: column;
+  color: rgb(44, 43, 43);
+  padding: 0.5rem 0;
+  transition: all 0.3s;
+}
+.favor-list > li > i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+}
+.favor-list > li:hover {
+  transform: scale(1.4);
+  /* color: #b2e1ed; */
+}
+/* .favor-list > li > span {
+    letter-spacing: 1px;
+  } /*
+  
+  /* hobbies section */
+.detail-section {
+  transition: all 0.3s;
+}
+
+.detail-title {
+  margin-top: 50px;
+  margin-left: 10px;
+  align-items: center;
+}
+.detail-section > .detail-content {
+  user-select: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: 10px;
+}
+
+.detail-content li {
+  padding: 8px;
+}
+
+.detail-section.edu > .detail-content {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.title-icon + span {
+  transition: all 0.3s;
+  margin-top: 0px;
+}
+
+span h3 {
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+/* .title-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+/* margin-right: 1rem; */
+/* width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--profile-theme);
+    border-radius: 50%;
+    transition: all 0.3s; 
+  }*/
+
+.title-icon i {
+  color: white;
+  line-height: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.detail-section:hover .title-icon {
+  transform: scale(1.5);
+}
+.detail-section:hover .title-icon + span {
+  letter-spacing: 1px;
+}
+
+.detail-section:hover .title-icon + span h3 {
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .detail-section > .detail-content {
+    margin-right: calc(50vw - 500px);
+    margin-left: calc(50vw - 500px);
+  }
+
+  .detail-title {
+    display: block;
+    text-align: center;
+  }
+}

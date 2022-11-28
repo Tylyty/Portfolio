@@ -27,6 +27,7 @@
   content: "Heute";
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+  font-size: large;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -39,6 +40,7 @@
   color: #b2e1ed;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+  font-size: large;
 }
 
 /* Container around content */
@@ -71,6 +73,12 @@
   position: relative;
   border-radius: 10px;
   max-width: fit-content;
+}
+.cv-container-content:hover {
+  transform: scale(1.1);
+  background-color: #fed728;
+  opacity: 0.9;
+  transition: all 0.5s;
 }
 
 .cv-text {

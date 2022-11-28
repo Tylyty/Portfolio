@@ -1,3 +1,6 @@
+
+feather.replace()
+
 /* mobileMenu src=https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 function mobileMenu() {
   const burgerLinks = document.getElementById("burgerLinks");

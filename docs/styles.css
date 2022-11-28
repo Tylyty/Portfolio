@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  color: rgb(44, 43, 43);
 }
 
 body,
@@ -20,13 +21,13 @@ h2 {
   font-family: "Roboto", sans-serif;
   margin-top: 60px;
   margin-bottom: 20px;
-  padding-left: 10px;
+  text-align: center;
 }
 
 h3 {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 0px;
-  padding-left: 10px;
+  text-align: center;
 }
 
 h4 {
@@ -34,9 +35,17 @@ h4 {
   margin-top: 5px;
 }
 
+h2:hover {
+  letter-spacing: 1px;
+}
+
+h3:hover {
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
-  color: rgb(44, 43, 43);
 }
 
 #navLinks {
@@ -217,5 +226,9 @@ footer {
 
   .parallax {
     min-height: 250px;
+  }
+
+  .hero-text {
+    top: 15vw;
   }
 }

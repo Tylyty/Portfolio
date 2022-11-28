@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="cv.css">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="hobbies.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -142,17 +145,17 @@
 
                     <div class="grid-item-lang-hobbies">
                         <div class="language">
-                            <h3>Sprachen</h3>
+                            <h3 class="langTitle">Sprachen</h3>
                             <ul>
-                                <li><img class="icon" src="assets/icon-swiss.png"> Deutsch</li>
-                                <li><img class="icon" src="assets/icon-england.png"> Englisch</li>
-                                <li><img class="icon" src="assets/icon-french.png"> Französisch</li>
+                                <li><img class="icon" src="assets/icon-swiss.png"> <span>Deutsch</span></li>
+                                <li><img class="icon" src="assets/icon-england.png"> <span>Englisch</span></li>
+                                <li><img class="icon" src="assets/icon-french.png"> <span>Französisch</span></li>
                             </ul>
                         </div>
 
-                        <div class="hobbies">
+                        <!--<div class="hobbies">
                             <h3>Hobbies</h3>
-                            <!-- icon src= https://feathericons.com/ -->
+                            icon src= https://feathericons.com/
                             <ul>
                                 <li><img class="icon" src="assets/icon-edit.svg"> Zeichnen</li>
                                 <li><img class="icon" src="assets/icon-monitor.svg"> Gaming</li>
@@ -160,13 +163,56 @@
                                 <li><img class="icon" src="assets/icon-camera.svg"> Fotografie</li>
                                 <li><img class="icon" src="assets/icon-map.svg"> Fahrradfahren</li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
+
+            <!-- hobbies -->
+
             <div class="container reveal">
-                <h2>Lieblingsbücher</h2>
-                <ul id="hpbooks"></ul>
+                <div class="detail-section interests">
+                    <div class="detail-title">
+                        <div class="title-icon">
+                            <!-- <i data-feather="heart"></i> -->
+                        </div>
+                        <span>
+                            <h3>Hobbies</h3>
+                        </span>
+                    </div>
+                    <div class="detail-content">
+                        <ul class="favor-list">
+                            <li>
+                                <i data-feather="edit"></i>
+                                <span>Zeichnen</span>
+                            </li>
+                            <li>
+                                <i data-feather="monitor"></i>
+                                <span>Gaming</span>
+                            </li>
+                            <li>
+                                <i data-feather="book-open"></i>
+                                <span>Lesen</span>
+                            </li>
+                            <li>
+                                <i data-feather="camera"></i>
+                                <span>Fotografie</span>
+                            </li>
+                            <li>
+                                <i data-feather="map"></i>
+                                <span>Fahrradfahren</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container reveal">
+                <div class="hp-section">
+                    <h3 class="hpTitle">Lieblingsbücher</h3>
+                    <ul id="hpbooks"></ul>
+                </div>
             </div>
         </section>
         <!-- parallax img src= https://pixabay.com/de/vectors/kreislauf-h%c3%bcgel-minimal-hintergrund-2145189/ -->

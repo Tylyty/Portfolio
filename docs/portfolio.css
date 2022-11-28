@@ -58,6 +58,8 @@
   max-width: 30ch;
 }
 
+
+
 @media (min-width: 768px) {
   #portfolio {
     margin-top: 250px;
