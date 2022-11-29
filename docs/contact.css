@@ -3,6 +3,11 @@
   max-height: 400px;
 }
 
+.contact-section:hover h2 {
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
 .container.reveal.active {
   bottom: 70px;
 }

@@ -2,6 +2,11 @@
   transition: all 0.3s;
 }
 
+.hp-section:hover h3 {
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
 ul#hpbooks {
   list-style: none;
   display: flex;
@@ -25,7 +30,7 @@ ul#hpbooks li:hover {
 
 ul#hpbooks li span {
   display: block;
-  max-width: 16ch;
+  max-width: 15ch;
 }
 
 @media (min-width: 768px) {

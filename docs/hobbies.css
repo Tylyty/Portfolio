@@ -76,6 +76,7 @@ ul {
 span h3 {
   margin-top: 0px;
   padding-left: 0px;
+  margin-left: -10px;
 }
 
 /* .title-icon {

@@ -7,6 +7,11 @@
   flex-direction: column;
 }
 
+#cv:hover h2 {
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   gap: 2em;

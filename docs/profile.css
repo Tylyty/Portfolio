@@ -11,6 +11,16 @@
   margin: 10px;
 }
 
+.skills:hover h3 {
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.language:hover h3 {
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
 .hobbies ul {
   list-style: none;
   padding-inline-start: 10px;
