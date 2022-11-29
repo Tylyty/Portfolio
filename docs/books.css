@@ -45,7 +45,7 @@ ul#hpbooks li span {
 
   ul#hpbooks li span {
     display: block;
-    max-width: 16ch;
+    max-width: 15ch;
   }
 
   .hpTitle {

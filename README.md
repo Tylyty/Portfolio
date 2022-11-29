@@ -8,6 +8,7 @@ parallax effect: https://pixabay.com/de/vectors/kreislauf-h%c3%bcgel-minimal-hin
 hero-img: https://www.w3schools.com/howto/howto_css_hero_image.asp <br>
 img caption: http://www.corelangs.com/css/box/caption.html <br>
 skill bars: https://dev.to/shantanu_jana/animated-skills-bar-html-and-css-1fbl <br>
+hobbies css: https://codepen.io/chih-hsi-chen/pen/KKpXLqR <br>
 API "how-to": https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data-de <br>
 CV-timeline: https://veracahrim.github.io/website-example/ <br>
 slide-show with buttons: https://www.w3schools.com/w3css/w3css_slideshow.asp <br>
