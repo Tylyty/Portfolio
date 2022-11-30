@@ -1,7 +1,7 @@
 #profile {
   margin-top: 230px;
   scroll-margin-top: 250px;
-  margin-bottom: -100px;
+  margin-bottom: -150px;
 }
 
 .profile-pic {
@@ -145,6 +145,7 @@ i.fa.fa {
   #profile {
     margin-top: 200px;
     scroll-margin-top: 250px;
+    margin-bottom: -100px;
   }
 
   .profile-content {

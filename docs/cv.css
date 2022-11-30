@@ -1,6 +1,6 @@
 #cv {
   margin-top: 250px;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
   scroll-margin-top: 250px;
   position: relative;
   align-items: center;
@@ -97,6 +97,7 @@
     justify-content: flex-start;
     margin-top: 200px;
     scroll-margin-top: 200px;
+    margin-bottom: -50px;
   }
 
   /* The actual timeline (the vertical ruler) */
