@@ -88,7 +88,11 @@
 }
 
 .cv-text {
-  max-width: 35ch;
+  max-width: 20ch;
+}
+
+.timeline h4 {
+  max-width: 20ch;
 }
 
 /* Media queries - Responsive timeline on screens larger than 768px wide */
@@ -158,6 +162,14 @@
     background-color: #b2e1ed;
     position: relative;
     border-radius: 10px;
-    max-width: 230px;
+    max-width: fit-content;
+  }
+
+  .cv-text {
+    max-width: 20ch;
+  }
+
+  .cv-container-content h4 {
+    max-width: 20ch;
   }
 }
